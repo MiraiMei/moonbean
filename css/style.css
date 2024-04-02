@@ -1,0 +1,62 @@
+
+/*----------------------GENERAL STYLES-------------------------*/
+
+/* Resetting box-sizing for all elements */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Setting base font size to 10px (62.5% of the default browser font size) */
+html {
+    font-size: 62.5%;
+}
+/*Now, 1rem = 10px, 1.6rem = 16px, 2.6rem = 26px etc*/
+
+body{
+    overflow: hidden auto; /*Hides horizontal overflow and shows vertical scrollbar only when there is an overflow*/
+    font-size: 1rem;
+    line-height: 1.5;
+    word-spacing: 2px;
+}
+
+
+
+/*----------------------TYPOGRAPHY-------------------------*/
+
+
+h1{
+    font-size: 4.778rem;
+}
+h2{
+    font-size: 3.981rem;
+}
+h3{
+    font-size: 3.318rem;
+}
+h4{
+    font-size: 2.765rem;
+}
+h5{
+    font-size: 2.304rem;
+}
+h6{
+    font-size: 1.92rem;
+}
+p{
+    font-size: 1.6rem;
+    width: 50ch;
+}
+small{
+    font-size: 1.333rem;
+}
+
+
+
+
+
+/*----------------------SPECIFIC STYLES-------------------------*/
+
+
+
+
+
