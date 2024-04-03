@@ -194,3 +194,43 @@ a{
     
 }
 /*----------------------END OF BADGES-------------------------*/
+
+
+
+
+/*----------------------END OF LINKS-------------------------*/
+
+
+/*----------------------LISTS-------------------------*/
+
+.list{
+    list-style: none;
+    padding-left: 0;
+    color: var(--black);
+}
+
+.list--inline .list__item{
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.list--checked{
+    list-style-image: url(../icons/tick.svg);
+    padding-left: 3rem;
+}
+.list--checked .list__item{
+    padding-left: .5rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width:1024px) {
+
+    /*LISTS - laptop version*/
+    .list--checked .list__item{
+        padding-left: 0;
+        margin-bottom: 1rem;
+    }
+    
+    
+}
+/*----------------------END OF LISTS-------------------------*/
