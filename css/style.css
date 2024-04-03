@@ -234,3 +234,36 @@ a{
     
 }
 /*----------------------END OF LISTS-------------------------*/
+
+
+/*----------------------ICONS-------------------------*/
+
+.icon{
+    width: 40px;
+    height: 40px;
+}
+
+.icon--black{
+    fill: var(--black);
+}
+.icon--white{
+    fill: var(--white);
+}
+
+.icon-container{
+    background-color: var(--secondary-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+}
+@media screen and (min-width:1024px) {
+
+    /*ICONS - laptop version*/
+   
+
+    
+}
+/*----------------------END OF ICONS-------------------------*/
