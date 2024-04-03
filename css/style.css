@@ -4,9 +4,9 @@
 
 :root{
     --primary-color: #FFD95A;
-    --secondary-color: #FFF7D4;
+    --secondary-color: #fff1b0;
     --accent-color: #C07F00;
-    --brand-gradient: linear-gradient(90deg, #C07F00 19%, rgba(255,245,149,1) 87%);
+    --brand-gradient: linear-gradient(90deg, #C07F00 19%, #fff1b0 87%);
     --black: #060600;
     --white: rgb(255, 255, 240);
 }
@@ -151,4 +151,46 @@ a{
 
 
 
+/*----------------------END OF LINKS-------------------------*/
 
+
+/*----------------------BADGES-------------------------*/
+
+.badge{
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+}
+
+.badge--primary{
+    background-color: var(--primary-color);
+    color: var(--black);
+}
+
+.badge--secondary{
+    background-color: var(--secondary-color);
+    color: var(--black);
+}
+
+.badge--small{
+    font-size: 1.6rem;
+}
+
+
+@media screen and (min-width:1024px) {
+
+    /*BADGES - laptop version*/
+
+    
+    .badge{
+        font-size: 1.5rem;
+    }
+
+    .badge--small{
+        font-size: 1.2rem;
+    }
+    
+}
+/*----------------------END OF BADGES-------------------------*/
