@@ -631,13 +631,44 @@ a{
     max-height: 100vh;
     opacity: 1;
 }
+
+ /*----------------------END OF COLLAPSIBLES-------------------------*/
+ 
+ /*----------------------BLOCKS-------------------------*/
+
+    .block{
+        --padding-vertical:6rem;
+        padding: var(--padding-vertical) 2rem;
+    }
+    .block__heading{
+        margin-top: 0;
+    }
+    .block--dark{
+        background: var(--black);
+        color: var(--white);
+    }
+    .block--skewed-right{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 74%);
+        padding-bottom: calc(var(--padding-vertical) + 4rem);
+    }
+    .block--skewed-left{
+        clip-path: polygon(0 0, 100% 0, 100% 81%, 0 100%);
+        padding-bottom: calc(var(--padding-vertical) + 4rem);
+    }
+    .block__header{
+        text-align: center;
+    }
+    .container{
+        max-width: 1140px;
+        margin: 0 auto;
+    }
  @media screen and (min-width:768px) {
  
-     /*COLLAPSIBLES - tablet version*/
+     /*BLOCKS - tablet version*/
  
-
+    
      
  }
- /*----------------------END OF COLLAPSIBLES-------------------------*/
+ /*----------------------END OF BLOCKS-------------------------*/
  
  
