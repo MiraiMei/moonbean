@@ -33,7 +33,6 @@ body{
     background-color: var(--white);
     color: var(--black);
     font-family: "Exo 2", sans-serif;
-    font-size: 2.4rem;
     line-height: 1.5;
     overflow: hidden auto; /*Hides horizontal overflow and shows vertical scrollbar only when there is an overflow*/
     word-spacing: 2px;
@@ -43,6 +42,9 @@ body{
 
 /*----------------------TYPOGRAPHY - mobile version-------------------------*/
 
+body{
+    font-size: 2rem;
+}
 h1, h2, h3, h4, h5, h6{
     font-family: "Merriweather", serif;
     font-weight: 700;
@@ -67,14 +69,9 @@ h5{
 h6{
     font-size: 2.88rem;
 }
-
 p{
     margin-top: 0;
 }
-small{
-    font-size: 2rem;
-}
-
 
 @media screen and (min-width:1024px) {
 
@@ -100,9 +97,6 @@ small{
     }
     h6{
         font-size: 1.92rem;
-    }
-    small{
-        font-size: 1.333rem;
     }
     
 }
@@ -142,7 +136,7 @@ a{
     /*LINKS - laptop version*/
 
     .link-arrow{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     
@@ -185,7 +179,7 @@ a{
 
     
     .badge{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .badge--small{
@@ -322,9 +316,37 @@ a{
 
     /*BUTTONS - laptop version*/
 .btn{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
  
 }
 /*----------------------END OF BUTTONS-------------------------*/
+
+
+/*----------------------INPUTS-------------------------*/
+
+.input{
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
+    color: var(--black);
+    font-size: 2rem;
+    outline: 0;
+    padding: 1.5rem 3rem;
+}
+.input:focus{
+    background-color: var(--secondary-color);
+
+}
+
+
+@media screen and (min-width:1024px) {
+
+    /*INPUTS - laptop version*/
+
+    .input{
+        font-size: 1.6rem;
+    }
+
+}
+/*----------------------END OF INPUTS-------------------------*/
 
