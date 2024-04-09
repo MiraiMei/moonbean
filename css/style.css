@@ -7,6 +7,7 @@
     --secondary-color: #fff1b0;
     --accent-color: #C07F00;
     --brand-gradient: linear-gradient(90deg, #C07F00 19%, #fff1b0 87%);
+    --box-shadow:#fff6cf;
     --black: #060600;
     --white: rgb(255, 255, 240);
 }
@@ -349,4 +350,35 @@ a{
 
 }
 /*----------------------END OF INPUTS-------------------------*/
+
+/*----------------------CARDS-------------------------*/
+
+.card{
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 0 20px 10px var(--box-shadow);
+}
+
+.card__header, .card__body{
+    padding: 2rem 3rem;
+}
+
+.card--primary .card__header{
+    background: var(--primary-color);
+    color: var(--black);
+}
+
+.card--secondary .card__header{
+    background: var(--secondary-color);
+    color: var(--black);
+}
+@media screen and (min-width:1024px) {
+
+    /*CARDS - laptop version*/
+
+ 
+    
+
+}
+/*----------------------END OF CARDS-------------------------*/
 
