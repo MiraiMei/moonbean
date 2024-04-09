@@ -6,7 +6,7 @@
     --primary-color: #FFD95A;
     --secondary-color: #fff1b0;
     --accent-color: #774f00;
-    --brand-gradient: linear-gradient(90deg, #C07F00 19%, #fff1b0 87%);
+    --brand-gradient: linear-gradient(90deg, #FFD95A 10%, #fff1b0 50%, #FFD95A 100%);
     --box-shadow:#f8f4f4;
     --black: #060600;
     --white: rgb(255, 255, 240);
@@ -478,7 +478,7 @@ a{
 /*----------------------QUOTES-------------------------*/
 
 .quote{
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-style: italic;
     color: var(--accent-color);
     line-height: 1.3;
@@ -495,6 +495,9 @@ a{
 .author__image{
     margin-top: 0;
 }
+.quote__author{
+    font-size: 2.4rem;
+}
 
 @media screen and (min-width:1024px) {
 
@@ -503,7 +506,10 @@ a{
         font-size: 2rem;
     }
     .quote__author{
-        font-size: 2.4rem;
+        font-size: 2rem;
+    }
+    .quote__author::before{
+        content: "--";
     }
 
 }
@@ -526,4 +532,27 @@ a{
     
 }
 /*----------------------END OF GRIDS-------------------------*/
+
+
+/*----------------------TESTIMONIALS-------------------------*/
+
+
+.testimonial{
+   background: var(--brand-gradient);
+   padding: 2rem;
+   margin: 0 2rem;
+   font-size: 1.6rem;
+}
+
+@media screen and (min-width:768px) {
+
+    /*TESTIMONIALS - tablet version*/
+
+.testimonial .media{
+    margin: 0 auto;
+}
+    
+    
+}
+/*----------------------END OF TESTIMONIALS-------------------------*/
 
