@@ -123,7 +123,7 @@ a{
     color: var(--accent-color);
     text-transform: uppercase;
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .link-arrow::after{
@@ -139,7 +139,7 @@ a{
     /*LINKS - laptop version*/
 
     .link-arrow{
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     
@@ -650,9 +650,12 @@ a{
     .block__header{
         text-align: center;
     }
-    .container{
-        max-width: 1140px;
+
+    @media screen and (min-width:1024px) {
+        .container{
+             max-width: 1140px;
         margin: 0 auto;
+        }
     }
     
  /*----------------------END OF BLOCKS-------------------------*/
@@ -822,3 +825,45 @@ a{
        
    }
 /*----------------------END OF PLANS BLOCK-------------------------*/
+/*----------------------FEATURE BLOCK-------------------------*/
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem 9rem;
+    align-items: center;
+    text-align: center;
+  }
+  .feature__block{
+    padding-top: 0;
+  }
+  .feature__heading {
+    margin: 1rem 0;
+  }
+  
+  .feature__image {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .feature:nth-of-type(even){
+   flex-direction: column-reverse;
+  }
+  @media screen and (min-width: 1024px) {
+    .feature, .feature:nth-of-type(even){
+        flex-direction: row;
+        height: 60vh;
+        gap: 16rem;
+    }
+    .feature{
+        text-align: left;
+        overflow: hidden;
+    }
+    .feature__image{
+        transform: scale(1.4);
+        justify-self: center;
+    }
+  }
+  
+
+  
+/*----------------------END OF FEATURE BLOCK-------------------------*/
