@@ -3,9 +3,10 @@
 
 
 :root{
-    --primary-color: #FFD95A;
-    --secondary-color: #fff1b0;
-    --accent-color: #774f00;
+    --primary-color: #ffc042;
+    --secondary-color: #ffd88a;
+    --accent-color: #ffaa01;
+    --accent-color-softer: #ffb82a;
     --brand-gradient: linear-gradient(90deg, #FFD95A 10%, #fff1b0 50%, #FFD95A 100%);
     --box-shadow:#f8f4f4;
     --black: #060600;
@@ -651,7 +652,7 @@ a{
         color: var(--white);
     }
     .block--skewed-right{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 74%);
+        clip-path: polygon(0 0, 100% 0, 100% 98%, 0 91%);;
         padding-bottom: calc(var(--padding-vertical) + 4rem);
     }
     .block--skewed-left{
@@ -665,14 +666,18 @@ a{
         max-width: 1140px;
         margin: 0 auto;
     }
-    
+    @media screen and (min-width:768px){
+        .block{
+            height: 91vh;
+        }
+    }
  /*----------------------END OF BLOCKS-------------------------*/
  
  
  /*----------------------NAVIGATION BAR-------------------------*/
 
  .nav{
-    background: var(--brand-gradient);
+    background: var(--accent-color-softer);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -741,3 +746,31 @@ a{
  }
 }
 /*----------------------END OF NAVIGATION BAR-------------------------*/
+/*----------------------HERO BLOCK-------------------------*/
+
+.hero__tagline{
+    letter-spacing: 1px;
+    margin: 2rem 0 5rem 0;
+}
+.hero__image{
+    width: 100%;
+}
+.hero__content .block__heading span{
+    display: block;
+    color: var(--accent-color);
+    font-family: "Exo 2", sans-serif;
+    font-weight: 400;
+    font-size: 5rem;
+    padding-bottom: 1.5rem;
+}
+@media screen and (min-width:768px) {
+
+ /*HERO BLOCK - tablet version*/
+
+    .hero__content{
+        text-align: left;
+        align-self: center;
+    }
+
+}
+/*----------------------END OF HERO BLOCK-------------------------*/
