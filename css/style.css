@@ -387,9 +387,9 @@ a{
 /*----------------------PLANS-------------------------*/
 
 .plan{
-    width: 90%;
+    width: 100%;
     max-width: 500px;
-    margin: 2rem auto;
+    margin: 0 auto;
 }
 .plan__name{
     margin: 0;
@@ -415,10 +415,6 @@ a{
     margin-bottom: 2rem;
     letter-spacing: 1px;
 }
-.plan-group{
-    display: flex;
-    flex-direction: column;
-}
 .plan--popular .card__header{
     position: relative;
 }
@@ -430,19 +426,11 @@ a{
     top: -6px;
     right: 5%;
 }
+
 @media screen and (min-width:1024px) {
 
     /*PLANS - laptop version*/
 
-    .plan{
-        margin: 1rem;
-    }
-    .plan-group{
-        flex-direction: row;
-        width: 90%;
-        margin: 0 auto;
-    }
-    
     .plan__name{
         font-size: 1.4rem;
     }
@@ -666,11 +654,7 @@ a{
         max-width: 1140px;
         margin: 0 auto;
     }
-    @media screen and (min-width:768px){
-        .block{
-            height: 91vh;
-        }
-    }
+    
  /*----------------------END OF BLOCKS-------------------------*/
  
  
@@ -772,5 +756,69 @@ a{
         align-self: center;
     }
 
+    .hero{
+        height: 91vh;
+    }
 }
 /*----------------------END OF HERO BLOCK-------------------------*/
+/*----------------------PLANS BLOCK-------------------------*/
+
+.block-plans{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+.plan-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+    .plan{
+       box-shadow: 0 0 10px 5px var(--accent-color);
+       border-radius: 6px;
+    }
+       .card__body, .card__header{
+        padding: 4rem;
+       }
+@media screen and (min-width:768px) {
+
+    /*PLANS BLOCK - tablet version*/
+   
+   
+       .block-plans{
+           margin: 0 auto;
+       }
+    .card__header{
+        padding-left: 4rem;
+    }
+   .card__body{
+    padding-left: 3rem;
+   }
+   }
+@media screen and (min-width:1224px) {
+
+    /*PLANS BLOCK - laptop version*/
+   
+   
+    .block-plans{
+        width: 90vw;
+        height: 100vh;
+        
+    }
+    .plan{
+       width: 30%;
+    }
+       .plan-group{
+           flex-direction: row;
+           justify-content: center;
+           padding-top: 10%;
+       }
+       .plan--popular{
+           transform: scale(1.1);
+       }
+       
+   }
+/*----------------------END OF PLANS BLOCK-------------------------*/
