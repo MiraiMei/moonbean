@@ -7,7 +7,7 @@
     --secondary-color: #ffd88a;
     --accent-color: #ffaa01;
     --accent-color-softer: #ffb82a;
-    --brand-gradient: linear-gradient(90deg, #FFD95A 10%, #fff1b0 50%, #FFD95A 100%);
+    --brand-gradient: linear-gradient(90deg, #ffb82a 10%, #fff1b0 50%, #ffb82a 100%);
     --box-shadow:#f8f4f4;
     --black: #060600;
     --white: rgb(255, 255, 240);
@@ -28,6 +28,7 @@
 /* Setting base font size to 10px (62.5% of the default browser font size) */
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 /*Now, 1rem = 10px, 1.6rem = 16px, 2.6rem = 26px etc*/
 
@@ -250,7 +251,7 @@ a{
 }
 
 .icon-container{
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color);
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -546,6 +547,13 @@ a{
     text-align: center;
     color: var(--secondary-color);
 }
+.testimonials__block{
+    min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
 @media screen and (max-width:400px) {
 
     /*TESTIMONIALS - tablet version*/
@@ -674,6 +682,9 @@ a{
         clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
         padding-bottom: calc(var(--padding-vertical) + 4rem);
     }
+    .block--skewed-top-left{
+        clip-path: polygon(0 2%, 100% 0, 100% 100%, 0% 100%);
+    }
     .block__header{
         text-align: center;
     }
@@ -691,11 +702,15 @@ a{
  /*----------------------NAVIGATION BAR-------------------------*/
 
  .nav{
-    background: var(--accent-color-softer);
+    background: var(--primary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 100;
  }
  .nav img{
     width: 11rem;
@@ -769,6 +784,9 @@ a{
 .hero__image{
     width: 100%;
 }
+.hero__content .block__heading{
+    font-size: 3rem;
+}
 .hero__content .block__heading span{
     display: block;
     color: var(--accent-color);
@@ -776,6 +794,9 @@ a{
     font-weight: 400;
     font-size: 5rem;
     padding-bottom: 1.5rem;
+}
+.hero{
+    padding-top: 20rem;
 }
 @media screen and (min-width:768px) {
 
@@ -787,7 +808,8 @@ a{
     }
 
     .hero{
-        height: 91vh;
+        height: 100vh;
+        padding-top: 10rem;
     }
 }
 /*----------------------END OF HERO BLOCK-------------------------*/
@@ -844,7 +866,6 @@ a{
        .plan-group{
            flex-direction: row;
            justify-content: center;
-           padding-top: 10%;
        }
        .plan--popular{
            transform: scale(1.1);
@@ -862,7 +883,7 @@ a{
     text-align: center;
   }
   .feature__block{
-    padding-top: 0;
+    padding-top: 10rem;
   }
   .feature__heading {
     margin: 1rem 0;
@@ -911,6 +932,9 @@ a{
         max-width: 700px;
         width: auto;
     }
+    .block-showcase .list{
+        margin-left: 2rem;
+    }
   }
   
 
@@ -923,12 +947,11 @@ a{
     border-bottom: 1px solid var(--secondary-color);
 }
 .footer__section .collapsible__heading{
-    color: var(--secondary-color);
+    color: var(--black);
     text-transform: uppercase;
     font-weight: 600;
 }
 .footer__brand{
-    background-color: var(--accent-color-softer);
     color: var(--black);
     margin-top: 5rem;
     text-align: center;
