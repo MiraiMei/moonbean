@@ -886,6 +886,12 @@ a{
   .feature__block{
     padding-top: 10rem;
   }
+  .feature__block>h2{
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    color: var(--primary-color);
+  }
   .feature__heading {
     margin: 1rem 0;
   }
