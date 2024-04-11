@@ -62,6 +62,7 @@ h2{
 }
 h3{
     font-size: 3.204rem;
+    font-weight: 500;
 }
 h4{
     font-size: 2.848rem;
@@ -204,7 +205,6 @@ a{
 .list{
     list-style: none;
     padding-left: 0;
-    color: var(--black);
 }
 
 .list--inline .list__item{
@@ -215,6 +215,7 @@ a{
 .list--checked{
     list-style-image: url(../icons/tick.svg);
     padding-left: 3rem;
+    color: var(--black);
 }
 .list--checked .list__item{
     padding-left: .5rem;
@@ -454,6 +455,7 @@ a{
 
 .media{
     display: flex;
+    margin-bottom: 3rem;
 }
 .media__title{
     margin-top: 0;
@@ -640,11 +642,11 @@ a{
         color: var(--white);
     }
     .block--skewed-right{
-        clip-path: polygon(0 0, 100% 0, 100% 98%, 0 91%);;
+        clip-path: polygon(0 0, 100% 0, 100% 98%, 0 90%);;
         padding-bottom: calc(var(--padding-vertical) + 4rem);
     }
     .block--skewed-left{
-        clip-path: polygon(0 0, 100% 0, 100% 81%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
         padding-bottom: calc(var(--padding-vertical) + 4rem);
     }
     .block__header{
@@ -867,3 +869,25 @@ a{
 
   
 /*----------------------END OF FEATURE BLOCK-------------------------*/
+/*----------------------SHOWCASE BLOCK-------------------------*/
+.block-showcase__image>img{
+    width: 100%;
+}
+
+  @media screen and (min-width: 768px) {
+    .block-showcase .grid{
+        grid-template-columns: 50% 50%;
+    }
+    .block-showcase__image{
+        justify-self: end;
+        align-self: center;
+    }
+    .block-showcase__image>img{
+        max-width: 700px;
+        width: auto;
+    }
+  }
+  
+
+  
+/*----------------------END OF SHOWCASE BLOCK-------------------------*/
